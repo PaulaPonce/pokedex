@@ -25,14 +25,14 @@
 	<header id="header" class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper">
-				<a href="#!" class="brand-logo left"><i class="material-icons">menu</i></a>
+				<a href="#!" id="activate-sidenav" data-activates="mobile-demo" class="brand-logo left"><i class="material-icons">menu</i></a>
 				<a href="#" data-activates="mobile-demo" class="button-collapse">Pokedex</a>
 			</div>
 		</nav>
 	</header>
 	<!-- Pokemon list-->
 	<section id="pokedex" class="container">
-		<h1>Pokedex</h1>
+		<h1 class="hide-on-med-and-down">Pokedex</h1>
 		<div class="search nav-wrapper">
 			<form>
 				<div class="input-field">
@@ -51,7 +51,14 @@
 	<footer id="footer" class="white-text">
 		<p>All content is © Nintendo, Game Freak, and The Pokémon Company.</p>
 	</footer>
-
+	<!-- Sidenav -->
+	<ul id="mobile-demo" class="side-nav">
+		<li><h5><a href="#!">Pokedex</a></h5><li>
+		<li><div class="divider"></div></li>
+		<li><a href="#!">Pokemon</a></li>
+		<li><a href="#!">About</a></li>
+	</ul>
+				
 	<!-- CDN JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- CDN Materialize JS-->

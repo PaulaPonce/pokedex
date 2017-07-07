@@ -9,7 +9,7 @@ body{
 	background-color: #a040a0;
 }
 
-.brand-logo i.material-icons{
+i.material-icons{
 	margin-left: 15px;
 }
 
@@ -35,4 +35,9 @@ h1{
 
 #footer p{
 	margin: .5em;
+}
+
+/* Sidenav*/
+h5{
+	margin-left: 1.2em;
 }
