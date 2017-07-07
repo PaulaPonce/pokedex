@@ -1,5 +1,5 @@
 body{
-	font-family: 'Raleway', sans-serif;
+	/*font-family: 'Raleway', sans-serif;*/
 	margin: 0;
 	padding: 0;
 }
@@ -15,4 +15,9 @@ body{
 
 nav .button-collapse{
 	margin-left: 4em;
+}
+
+/* Pokemon list */
+h1{
+	font-size: 2.5em;
 }
