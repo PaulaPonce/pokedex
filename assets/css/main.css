@@ -3,3 +3,16 @@ body{
 	margin: 0;
 	padding: 0;
 }
+
+/* Header */
+#header .nav-wrapper{
+	background-color: #a040a0;
+}
+
+.brand-logo i.material-icons{
+	margin-left: 15px;
+}
+
+nav .button-collapse{
+	margin-left: 4em;
+}
