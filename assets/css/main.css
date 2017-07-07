@@ -21,3 +21,18 @@ nav .button-collapse{
 h1{
 	font-size: 2.5em;
 }
+
+.search{
+	margin-bottom: 5em;
+}
+
+/* Footer */
+#footer{
+	background-color: #a040a0;
+	height: 160px;
+	padding: 2em;
+}
+
+#footer p{
+	margin: .5em;
+}
