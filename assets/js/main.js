@@ -13,7 +13,6 @@ $(document).ready(function(){
 		// new URL for 3rd GET request
 		var pokeURL2 = "http://pokeapi.co/api/v2/pokemon/" + inputVal;
 
-		//Find pokemon by name or number
 		/*
 		var ajaxName = $.ajax({
 			url: "http://pokeapi.co/api/v2/pokemon/" + pokeName,
@@ -23,6 +22,7 @@ $(document).ready(function(){
 		console.log(ajaxName);
 		*/
 
+		//Find pokemon by name or number
 		$.getJSON(pokeURL, function(data){
 			//console.log(data);
 			
@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 			// 3rd GET request to get an image
 			$.getJSON(pokeURL2, function(data3){
-				console.log(data3);
+				//console.log(data3);
 				//console.log(JSON.stringify(data, null, "  "));
 				var imageURI = data3.sprites.front_default;
             
@@ -76,37 +76,8 @@ $(document).ready(function(){
 				console.log("Description URI: ", descriptionURI);
 				console.log("Description: ", pokeDescription);
 				console.log("Image URI: ", imageURI);
-/*
+
 				// append data to HTML
-				// empty string to hold HTML
-				var li = "";
-				li += '<li id="img"><img src="' + imageURI + '">';
-
-				li += '<h1>#' + pokeID + ' ' + pokeName + '</h1>';
-				li += '<p>' + pokeDescription + '</p>';
-
-				li += '<p>Height: ' + pokeHeight + '</p>';
-				li += '<p>Weight: ' + pokeWeight + '</p>';
-
-				li += '<p>Abilities: <br>' + pokeAbility1 + '<br>' + pokeAbility2 + '<br>' + pokeAbility3 + '</p>';
-
-				// only display Type 2 if it is not null
-				if (pokeType2 != null){
-					li += '<p>Type: ' + pokeType1 + ' ' + pokeType2 + '</p>';
-				}else{
-					li += '<p>Type: ' + pokeType1 + '</p>';
-				}
-
-				li += '</li>';
-
-				// empty the listview
-				$("#modal1 #pokeDetails").empty();
-
-				// append new li to listview
-				$("#modal1 #pokeDetails").append(li).promise().done(function(){
-					$(this).listview("refresh");
-				});
-*/
 				var li = "";
 
 				li += "<p><b>Height:</b> " + pokeHeight + "</p>";
@@ -131,23 +102,12 @@ $(document).ready(function(){
 				// empty the listview
 				//$("#pokeData").empty();
 
+				// append elements to modal
 				$("#pokeName").append("<h1>#" + pokeID + " " + pokeName + "</h1>")
-				$("#pokeScript").append("<img src='" + imageURI + "'>");
+				$("#pokeScript").append("<img src='" + imageURI + "'><div class='row'><div class='col s12 center-align'><img class='icon' src='assets/icon/pokeball_gray.png'><img class='icon' src='assets/icon/valentines-heart.png'><img class='icon' src='assets/icon/data.png'></div></div>");
 				$("#pokeDescription").append("<p>" + pokeDescription + "</p>");
 				$("#pokeDetails1").append(li);
-
-				
-
 			});
-
 		}); //2nd and 3rd GET requests are nested in success function of 1st GET request
-	
 	});
-
 })
-//http://pokeapi.co/api/v2/pokemon/
-//pokeapi.co/media/sprites/pokemon/1.png
-
-//http://pokeapi-how.appspot.com/page0
-
-//http://jsfiddle.net/iAmMortos/nxsmbwLq/

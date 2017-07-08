@@ -52,3 +52,14 @@ h5{
 	color: whitesmoke;
 	background-color: #36a4d3;
 }
+
+#pokeScript{
+	background-color: #dbdbdb;
+	text-align: center;
+}
+
+.icon{
+	width: 1em;
+	height: 1em;
+	background-color: whitesmoke;
+}
