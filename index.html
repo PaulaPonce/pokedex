@@ -34,19 +34,61 @@
 	<section id="pokedex" class="container">
 		<h1 class="hide-on-med-and-down">Pokedex</h1>
 		<div class="search nav-wrapper">
-			<form>
+			<form id="pokeForm" action="#pokeDetails-page" method="post">
 				<div class="input-field">
-					<input id="search" type="search" placeholder="Search for Pokemon" required>
-					<label class="label-icon" for="search"><i class="material-icons">search</i></label>
+					<input id="input" type="search" placeholder="Search for Pokemon" required>
+					<label class="label-icon" for="input"><i class="material-icons">search</i></label>
 					<i class="material-icons">close</i>
+					<!-- Modal Trigger -->
+					<button id="search" data-target="modal1" class="waves-effect waves-light btn left" href="#modal1">Search</button>
 				</div>
 			</form>
 			<button class="waves-effect waves-light btn right">a - z</button>
 		</div>
-		<div class="pokemon-container">
+	</section>
+	<!-- Modal Structure -->
+	<div id="modal1" class="modal">
+		<div id="pokeData" data-role="listview" data-inset="true" class="modal-content">
+			<div class="row">
+				<div id="pokeName" class="col s12">
+					<!-- Pokemon name and number -->
+				</div>
+			</div>
+			<div class="row">
+				<div id="pokeScript" class="col s4">
+						<!-- Pokemon image -->
+				</div>
+				<div class="col s8">
+					<div id="pokeDescription" class="col s12">
+						<!-- Description -->
+					</div>
+				</div>
+			</div>
+			<div class="pokeDetails">
+				<div class="row">
+					<div class="col s6">
+						<ul id="pokeDetails1">
+							<!-- Pokemon data -->
+						</ul>
+					</div>
+					<div class="pokeDetails col s6">
+						<ul id="pokeDetails2">
+							<!-- Pokemon abilities -->
+						</ul>
+					</div>
+					<div class="row">
+						<div id="pokeDetails3" class="col s12">
+							<!-- Pokemon type -->
+						</div>
+					</div>
+				</div>
+			</div>
 			
 		</div>
-	</section>
+		<div class="modal-footer">
+			<a href="#!" class="modal-action modal-close"><img src="assets/icon/cross-out.png"></a>
+		</div>
+	</div>
 	<!-- Footer -->
 	<footer id="footer" class="white-text">
 		<p>All content is © Nintendo, Game Freak, and The Pokémon Company.</p>

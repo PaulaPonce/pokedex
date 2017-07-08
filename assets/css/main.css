@@ -41,3 +41,14 @@ h1{
 h5{
 	margin-left: 1.2em;
 }
+
+/* Modal */
+.modal, .modal .modal-footer{
+	color: #646464;
+	background-color: #edecec;
+}
+
+.pokeDetails{
+	color: whitesmoke;
+	background-color: #36a4d3;
+}
