@@ -7,11 +7,11 @@ $(document).ready(function(){
 
 		//Input value
 		var inputVal = $("input[type=search]").val();
-		var pokeURL = "http://pokeapi.co/api/v1/pokemon/" + inputVal;
+		var pokeURL = "https://pokeapi.co/api/v1/pokemon/" + inputVal;
 		console.log(inputVal);
 
 		// new URL for 3rd GET request
-		var pokeURL2 = "http://pokeapi.co/api/v2/pokemon/" + inputVal;
+		var pokeURL2 = "https://pokeapi.co/api/v2/pokemon/" + inputVal;
 
 		/*
 		var ajaxName = $.ajax({
@@ -48,7 +48,7 @@ $(document).ready(function(){
 			}
 
 			// concatenate new URL for 2nd GET request
-			var descriptionURI = "http://pokeapi.co" + data.descriptions[0].resource_uri;
+			var descriptionURI = "https://pokeapi.co" + data.descriptions[0].resource_uri;
 			// this var will hold the description string
 			var pokeDescription = "";
 
